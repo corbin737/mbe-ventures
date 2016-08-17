@@ -12,7 +12,7 @@ gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Less task to compile the less files and add the banner
 gulp.task('less', function() {
-    return gulp.src('less/grayscale.less')
+    return gulp.src('less/app.less')
         .pipe(less())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
@@ -22,7 +22,7 @@ gulp.task('less', function() {
 
 // Minify CSS
 gulp.task('minify-css', function() {
-    return gulp.src('css/grayscale.css')
+    return gulp.src('css/app.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>MBE Ventures Inc.</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,8 +19,8 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <!-- App CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,6 +33,103 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+    <!-- Clients Modal -->
+    <div class="modal fade" id="clientsModal" tabindex="-1" role="dialog" aria-labelledby="clientsModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">All Clients</h4>
+          </div>
+          <div class="modal-body">
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object" src="/img/logo1.png" alt="First client logo">
+              </div>
+              <div class="media-body media-middle">
+                <h2 class="media-heading">SNC Lavalin</h2>
+              </div>
+              <div class="media-right media-middle h2">
+                <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <hr>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object" src="/img/logo1.png" alt="Second client logo">
+              </div>
+              <div class="media-body media-middle">
+                <h2 class="media-heading">The City of Calgary</h2>
+              </div>
+              <div class="media-right media-middle h2">
+                <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <hr>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object" src="/img/logo1.png" alt="Third client logo">
+              </div>
+              <div class="media-body media-middle">
+                <h2 class="media-heading">Athabasca Oil Sands Corp.</h2>
+              </div>
+              <div class="media-right media-middle h2">
+                <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <hr>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object" src="/img/logo1.png" alt="Fourth client logo">
+              </div>
+              <div class="media-body media-middle">
+                <h2 class="media-heading">Clean Energy Developments</h2>
+              </div>
+              <div class="media-right media-middle h2">
+                <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <hr>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object" src="/img/logo1.png" alt="Fifth client logo">
+              </div>
+              <div class="media-body media-middle">
+                <h2 class="media-heading">Omicron</h2>
+              </div>
+              <div class="media-right media-middle h2">
+                <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <hr>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object" src="/img/logo1.png" alt="Sixth client logo">
+              </div>
+              <div class="media-body media-middle">
+                <h2 class="media-heading">New High Ridge Resources Inc.</h2>
+              </div>
+              <div class="media-right media-middle h2">
+                <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <hr>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object" src="/img/logo1.png" alt="Seventh client logo">
+              </div>
+              <div class="media-body media-middle">
+                <h2 class="media-heading">D. A. Watt Consulting</h2>
+              </div>
+              <div class="media-right media-middle h2">
+                <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -41,7 +138,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+                    <i class="fa fa-play-circle"></i> <span class="light">MBE</span> Ventures
                 </a>
             </div>
 
@@ -56,7 +153,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#clients">Clients</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -73,10 +173,10 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                            <br>Created by Start Bootstrap.</p>
+                    <div class="col-md-10 col-md-offset-1">
+                        <h1 class="brand-heading">MBE Ventures</h1>
+                        <p class="intro-text">Here is your company tagline.
+                            <br>Maybe on two lines.</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -90,54 +190,136 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <h2>About Us</h2>
+                <p>Our company is committed to the success of others, and was founded on the principle of offering experienced people to work with organizations to achieve this end. We bring extra support when it is needed for both the governance and delivery of project and organizational strategies.</p>
+                <p>We customize our services and staffing to meet client requirements and expectations, and bring the extra horsepower when and where needed.</p>
+                <p>MBE was established in 2007 and operates throughout western Canada. David McElhanney is the principal and founder of the company, providing knowledge, experience and judgement gained during 25 years in business and engineering consulting.</p>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <!-- Clients Section -->
+    <section id="clients" class="content-section text-center">
+        <div class="clients-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <h2>Clients</h2>
+                    <p>Our clients include the following companies and organizations.</p>
+                    <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img src="/img/logo1.png" alt="First client logo">
+                          <div class="caption">
+                            <h3>SNC Lavalin</h3>
+                            <p><a href="#" class="btn btn-default" role="button">Visit Website</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img src="/img/logo1.png" alt="Second client logo">
+                          <div class="caption">
+                            <h3>City of Calgary</h3>
+                            <p><a href="#" class="btn btn-default" role="button">Visit Website</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img src="/img/logo1.png" alt="Third client logo">
+                          <div class="caption">
+                            <h3>Athabasca Oil Sands</h3>
+                            <p><a href="#" class="btn btn-default" role="button">Visit Website</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#clientsModal">
+                      View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <!-- Services Section -->
+    <section id="services" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <h2>Services</h2>
+                <p>
+                  We offer high quality consulting in a variety of disciplines across both business and engineering.
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                <table class="table">
+                  <tr>
+                    <th class="info-1">Business Services</th>
+                    <th class="info-2">Engineering Services</th>
+                  </tr>
+                  <tr>
+                    <td class="info-1">Strategic Planning</td>
+                    <td class="info-2">Peer Review</td>
+                  </tr>
+                  <tr>
+                    <td class="info-1">Corporate Governance</td>
+                    <td class="info-2">Project Management</td>
+                  </tr>
+                  <tr>
+                    <td class="info-1">Leadership Development</td>
+                    <td class="info-2">Discipline Leadership</td>
+                  </tr>
+                  <tr>
+                    <td class="info-1">Performance Management</td>
+                    <td class="info-2">Senior Civil Engineering</td>
+                  </tr>
+                  <tr>
+                    <td class="info-1">General Management</td>
+                    <td class="info-2">Transportation Specialists</td>
+                  </tr>
+                  <tr class="info-3"><td colspan="2">
+                    <strong>Public &amp; Private Sectors</strong>
+                  </td></tr>
+                  <tr class="info-3"><td colspan="2">
+                    <strong>Coaching</strong>
+                  </td></tr>
+                  <tr class="info-3"><td colspan="2">
+                    <strong>Mentoring</strong>
+                  </td></tr>
+                </table>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="contact-section">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2>Contact MBE Ventures</h2>
+                  <p>Please email or call for more information or to inquire about our services.</p>
+                  <ul class="list-inline banner-social-buttons">
+                      <li>
+                          <a href="mailto:dave@mbeventures.com" class="btn btn-default contact-btn"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="network-name">dave@mbeventures.com</span></a>
+                      </li>
+                      <li>
+                          <a href="tel:14035126676" class="btn btn-default contact-btn"><i class="fa fa-phone" aria-hidden="true"></i> <span class="network-name">403-512-6676</span></a>
+                      </li>
+                  </ul>
+                  <address class="contact-address">
+                    512 Sierra Morena Pl SW<br>
+                    Calgary, AB  T3H 2X1
+                  </address>
+              </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p class="copyright">Copyright &copy; MBE Ventures Inc. </p>
         </div>
     </footer>
 
@@ -152,6 +334,14 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
+
+    <!-- App JavaScript -->
+    <script>
+      $(document).ready(function() {
+        var date = new Date();
+        $('.copyright').append(date.getFullYear());
+      })
+    </script>
 
 </body>
 

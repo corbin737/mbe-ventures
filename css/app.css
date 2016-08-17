@@ -215,7 +215,9 @@ a:focus {
 .content-section {
   padding-top: 100px;
 }
-.download-section {
+.download-section,
+.clients-section,
+.contact-section {
   width: 100%;
   padding: 50px 0;
   color: white;
@@ -230,7 +232,9 @@ a:focus {
   .content-section {
     padding-top: 250px;
   }
-  .download-section {
+  .download-section,
+  .clients-section,
+  .contact-section {
     padding: 100px 0;
   }
 }
@@ -249,7 +253,8 @@ a:focus {
   background-color: transparent;
 }
 .btn-default:hover,
-.btn-default:focus {
+.btn-default:focus,
+.btn-primary {
   border: 1px solid #42DCA3;
   outline: none;
   color: black;
@@ -297,4 +302,86 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #21b17b;
+  color: black;
+  border-color: #21b17b;
+}
+#clientsModal .modal-content {
+  border-radius: 0;
+  background: #666;
+}
+#clientsModal .modal-content .modal-header {
+  background: #666;
+}
+#clientsModal .modal-content .modal-header .close {
+  color: white;
+  opacity: 1;
+}
+#clientsModal .modal-content .modal-body {
+  background: white;
+  color: black;
+}
+#clientsModal .modal-content .modal-body .media-object {
+  width: 64px;
+  height: 64px;
+}
+.clients-section {
+  background-image: url('/img/clients-bg.jpg');
+}
+.clients-section .thumbnail {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 0;
+}
+.clients-section .thumbnail img {
+  background-color: #eee;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.clients-section .thumbnail .caption h3 {
+  color: white;
+  min-height: 52px;
+}
+#services .table {
+  font-size: 18px;
+}
+#services .table .info-1 {
+  background-color: rgba(255, 119, 51, 0.85);
+}
+#services .table .info-2 {
+  background-color: rgba(128, 128, 255, 0.85);
+}
+#services .table .info-3 {
+  background-color: rgba(68, 68, 68, 0.75);
+}
+.contact-section {
+  background-image: url('/img/contact-bg.jpg');
+  background-position: bottom center;
+}
+@media (min-width: 768px) {
+  .contact-section .contact-btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+  }
+}
+.contact-section .contact-address {
+  margin: auto;
+  margin-top: 50px;
+  font-size: 16px;
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 30px;
+  max-width: 300px;
+}
+.copyright {
+  font-size: 14px;
 }

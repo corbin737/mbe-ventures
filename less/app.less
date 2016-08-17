@@ -1,0 +1,95 @@
+@import "grayscale.less";
+
+// Redefinition of Bootstrap's .btn-lg
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+// Add .btn-primary in style of theme
+.btn-primary {
+  &:extend(.btn-default:hover);
+  &:hover {
+    background-color: darken(@primary, 15%);
+    color: black;
+    border-color: darken(@primary, 15%);
+  }
+  &:active, &:focus { &:extend(.btn-primary:hover); }
+}
+
+#clientsModal {
+  .modal-content {
+    border-radius: 0;
+    background: #666;
+
+    .modal-header {
+      background: #666;
+      .close {
+        color: white;
+        opacity: 1
+      }
+    }
+
+    .modal-body {
+      background: white;
+      color: black;
+      .media-object {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+}
+
+.clients-section {
+  &:extend(.download-section);
+  background-image: url('/img/clients-bg.jpg');
+
+  .thumbnail {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 0;
+
+    img {
+      background-color: #eee;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .caption h3 {
+      color: white;
+      min-height: 52px;
+    }
+  }
+}
+
+#services .table {
+  font-size: 18px;
+  .info-1 { background-color: fadeout(#ff7733, 15%) }
+  .info-2 { background-color: fadeout(#8080ff, 15%) }
+  .info-3 { background-color: fadeout(#444, 25%) }
+}
+
+.contact-section {
+  &:extend(.download-section);
+  background-image: url('/img/contact-bg.jpg');
+  background-position: bottom center;
+
+  .contact-btn {
+    @media(min-width: 768px) { .btn-lg() }
+  }
+
+  .contact-address {
+    margin: auto;
+    margin-top: 50px;
+    font-size: 16px;
+    background-color: fadeout(#333, 10%);
+    padding: 30px;
+    max-width: 300px;
+  }
+}
+
+.copyright {
+  font-size: 14px;
+}
