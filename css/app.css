@@ -343,7 +343,8 @@ body {
   border-radius: 0;
 }
 .clients-section .thumbnail img {
-  background-color: #eee;
+  background-color: #fff;
+  padding: 10px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
