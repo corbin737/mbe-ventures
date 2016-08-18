@@ -377,6 +377,16 @@ body {
   background-image: url('/img/contact-bg.jpg');
   background-position: bottom center;
 }
+.contact-section .contact-items {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .contact-section .contact-items {
+    padding-top: 28px;
+  }
+}
 @media (min-width: 768px) {
   .contact-section .contact-btn {
     padding: 10px 16px;
@@ -385,12 +395,8 @@ body {
   }
 }
 .contact-section .contact-address {
-  margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 16px;
-  background-color: rgba(51, 51, 51, 0.9);
-  padding: 30px;
-  max-width: 300px;
 }
 .copyright {
   font-size: 14px;

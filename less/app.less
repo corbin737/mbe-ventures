@@ -80,20 +80,21 @@
   background-image: url('/img/contact-bg.jpg');
   background-position: bottom center;
 
+  .contact-items {
+    background-color: fadeout(#333, 10%);
+    padding-top: 15px;
+    @media(min-width: 1200px) { padding-top: 28px }
+    padding-bottom: 10px;
+  }
+
   .contact-btn {
     @media(min-width: 768px) { .btn-lg() }
   }
 
   .contact-address {
-    margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 16px;
-    background-color: fadeout(#333, 10%);
-    padding: 30px;
-    max-width: 300px;
   }
 }
 
-.copyright {
-  font-size: 14px;
-}
+.copyright { font-size: 14px }
