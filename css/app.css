@@ -34,7 +34,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #7299BA;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -42,7 +42,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #416685;
 }
 .light {
   font-weight: 400;
@@ -248,17 +248,17 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #7299BA;
+  color: #7299BA;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-primary {
-  border: 1px solid #42DCA3;
+  border: 1px solid #7299BA;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: #7299BA;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -311,9 +311,9 @@ body {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: #21b17b;
+  background-color: #497396;
   color: black;
-  border-color: #21b17b;
+  border-color: #497396;
 }
 #clientsModal .modal-content {
   border-radius: 0;
