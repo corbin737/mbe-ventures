@@ -335,7 +335,7 @@ body {
   height: 64px;
 }
 .clients-section {
-  background-image: url('img/clients-bg.jpg');
+  background-image: url('../img/clients-bg.jpg');
 }
 .clients-section .thumbnail {
   background-color: rgba(0, 0, 0, 0.6);
@@ -374,7 +374,7 @@ body {
   background-color: rgba(68, 68, 68, 0.75);
 }
 .contact-section {
-  background-image: url('img/contact-bg.jpg');
+  background-image: url('../img/contact-bg.jpg');
   background-position: bottom center;
 }
 .contact-section .contact-items {
