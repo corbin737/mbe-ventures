@@ -23,5 +23,7 @@ $(function() {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
-    $(this).closest('.collapse').collapse('toggle');
+  if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+    $('.navbar-toggle:visible').click();
+  }
 });
