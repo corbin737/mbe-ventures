@@ -15,7 +15,7 @@ $(document).ready(function() {
       }
     });
   }
-  overrideScroll('#about', 100);
+  overrideScroll('#about', 60);
   overrideScroll('#clients', 200);
   overrideScroll('#services', 100);
   overrideScroll('#contact', 110);
